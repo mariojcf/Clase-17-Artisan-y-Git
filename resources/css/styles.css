@@ -1,0 +1,53 @@
+body { 									/* Selector */
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 1px, #e5e5f7 1px, #e5e5f7);
+}
+
+/* segunda regla */
+h1, h2, h3, h4, h5, h6 { 				/* Selectores */
+	text-align: center;					/* propiedad:valor*/
+	color: orange;
+}
+/* Estilos para centrar la imagen */
+.nikes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Ajusta este valor si necesitas un espacio superior */
+}
+.nikes img{
+	max-width: 400px; /*Para la imagen a un tamaño más pequeño o mas grande*/
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} 
+ nav {
+            background-color: #444;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+@media screen and (max-width: 768px) {
+            /* Estilos para pantallas más pequeñas */
+            header {
+                font-size: 1.2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
